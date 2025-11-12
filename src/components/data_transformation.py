@@ -62,7 +62,7 @@ class DataTransformation:
             logging.info("Exception occured in get_data_transformer_object method")
             raise CustomException(e, sys)
 
-    def initiate_data_datatransformation(self, train_path, test_path):
+    def initiate_data_transformation(self, train_path, test_path):
         try:
             train_df = pd.read_csv(train_path)
             test_df = pd.read_csv(test_path)
